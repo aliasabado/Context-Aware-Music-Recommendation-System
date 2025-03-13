@@ -105,10 +105,12 @@ with open(spotify_data, "r", encoding="utf-8") as file:
 
 df = pd.DataFrame(data)
 
-# Apply genre-finding function to first 50 entries
-sample = df.head(100).copy()
-sample["genre"] = sample["artistName"].apply(findGenre)
-
-print(sample.size)
-sample_fixed = sample.dropna()
-print(sample_fixed.size)
+for i in range(14):
+    df_slice = df.iloc[500*i:500*(i+1)].copy()
+    df_slice["genre"] = df_slice["artistName"].apply(findGenre)
+    
+    # If it's the first batch, write the header; otherwise, skip it.
+    if i == 0:
+        df_slice.to_csv("genres.csv", mode='w', header=True, index=False)  # Write header only for the first batch
+    else:
+        df_slice.to_csv("genres.csv", mode='a', header=False, index=False)  # Append without header for subsequent batches
