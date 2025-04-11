@@ -20,9 +20,13 @@ Step-By-Step Guide:
 
 5. clustering.py:
 	role: used DBSCAN to cluster similar songs together. If some clusters were too big, use KMeans to convert those into smaller clusters (added 1000 to  	their id so it doesn't overlap with ids from the original DBSCAN)
-	outputs: Alia/Puja-clustered.py
+	outputs: Alia/Puja-clustered.py]
+6. relationship-analysis.py
+	role: basically accounts for which audio features matter the most and clusters based on those only
+	outputs: Puja/Alia-feature-clustered.csv
 
 6. final-ml-pipeline.py
 	role: run ml pipelines to match weather features with clusters. Predicts a cluster, from which we can then pick songs to recommend. Uses 3 ml model 	types and keeps the best
+	run with both Puja/Alia-clustered.csv and Puja/Alia-feature-clustered.csv and see which gives better results
 	outputs: none
 	
