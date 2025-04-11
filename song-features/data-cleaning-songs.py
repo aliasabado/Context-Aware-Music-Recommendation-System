@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 
 #load dataset
-songs = pd.read_csv("audio-added-Alia.csv", header=0, parse_dates=['timestamp'])
+songs = pd.read_csv("audio-added-Puja.csv", header=0, parse_dates=['timestamp'])
 print(songs.columns)
 
 #drop columns that are not needed + any na entries 
@@ -31,15 +31,15 @@ encoded = pd.get_dummies(songs['genre'], prefix='genre')
 onehot = songs.copy()
 onehot = onehot.drop(columns='genre')
 onehot = pd.concat([onehot, encoded], axis=1)
-onehot.to_csv("songs-cleaned-onehot-Alia.csv", index = False)
+onehot.to_csv("songs-cleaned-Puja.csv", index = False)
 
 
-#label encode:
-labeled = songs.copy()
-le = LabelEncoder()
-labeled['genre_label'] = le.fit_transform(labeled['genre'])
-labeled = labeled.drop(columns='genre')
-labeled.to_csv("songs-cleaned-label-Alia.csv", index = False)
+# #label encode:
+# labeled = songs.copy()
+# le = LabelEncoder()
+# labeled['genre_label'] = le.fit_transform(labeled['genre'])
+# labeled = labeled.drop(columns='genre')
+# labeled.to_csv("songs-cleaned-label-Alia.csv", index = False)
 
 
 #do some basic plotting to find overacrching trends
