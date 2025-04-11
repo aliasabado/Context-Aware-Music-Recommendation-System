@@ -7,7 +7,7 @@ from sklearn.decomposition import PCA
 import os
 os.environ['LOKY_MAX_CPU_COUNT'] = '4'
 
-df = pd.read_csv("Alia-onehot.csv", header=0, parse_dates=['date'])
+df = pd.read_csv("Merged-Alia.csv", header=0, parse_dates=['date'])
 
 #get all relevant features
 audio_features = ['popularity', 'danceability', 'energy','key','loudness','mode','speechiness','acousticness','instrumentalness','liveness','valence','tempo']
