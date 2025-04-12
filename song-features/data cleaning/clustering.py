@@ -7,7 +7,7 @@ from sklearn.decomposition import PCA
 import os
 os.environ['LOKY_MAX_CPU_COUNT'] = '4'
 
-df = pd.read_csv("Merged-Alia.csv", header=0, parse_dates=['date'])
+df = pd.read_csv("Merged-Puja.csv", header=0, parse_dates=['date'])
 
 #get all relevant features
 audio_features = ['popularity', 'danceability', 'energy','key','loudness','mode','speechiness','acousticness','instrumentalness','liveness','valence','tempo']
@@ -64,7 +64,7 @@ valid_clusters = cluster_counts[cluster_counts >= 10].index
 df = df[df['cluster'].isin(valid_clusters)]
 
 #save
-df.to_csv("Alia-clustered.csv", index=False)
+df.to_csv("Puja-clustered.csv", index=False)
 
 #descrive clusters
 cluster_sizes = df['cluster'].value_counts().sort_index()

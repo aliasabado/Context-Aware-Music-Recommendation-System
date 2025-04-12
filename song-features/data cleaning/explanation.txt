@@ -20,7 +20,7 @@ Step-By-Step Guide:
 
 5. clustering.py:
 	role: used DBSCAN to cluster similar songs together. If some clusters were too big, use KMeans to convert those into smaller clusters (added 1000 to  	their id so it doesn't overlap with ids from the original DBSCAN)
-	outputs: Alia/Puja-clustered.py]
+	outputs: Alia/Puja-clustered.py
 6. relationship-analysis.py
 	role: basically accounts for which audio features matter the most and clusters based on those only
 	outputs: Puja/Alia-feature-clustered.csv
