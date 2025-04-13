@@ -23,7 +23,7 @@ If using a virtual environment:
          source venv/bin/activate  # Mac/Linux
          venv\Scripts\activate     # Windows </pre>
 
-## Data cleaning 
+## Data cleaning and Model 
 Step-By-Step Guide:
 1. add-audio-features.py: <br>
 	role: merge personal spotify history with Kaggle dataset at https://www.kaggle.com/datasets/amitanshjoshi/spotify-1million-tracks?resource=download to add features like energy, danceability, etc <br>
