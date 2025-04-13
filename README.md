@@ -4,6 +4,7 @@ This project analyzes and clusters songs based on audio and genre features, then
 ## Directories
     .
     ├── initial-genre-only/                   # our original gathering and analysis where we weren't using song features other than genre
+<<<<<<< HEAD
     │   ├── data/                             # song and weather data, original and with API-fetched genre appendedeto it
     │   └── analysis/                         # statistical analyses between weather features and song genres
     |   |__ cleaning/                         # data cleaning    
@@ -14,6 +15,18 @@ This project analyzes and clusters songs based on audio and genre features, then
     │   ├── data cleaning/                    # source for data cleaning files
     │   ├── model/                            # final model and recommendor
     |	├── analysis/                         # analyzes relationships between song features and weather to pick best 3 (unused -- did not improve accuracy)
+=======
+    │       ├── data/                             # song and weather data, original and with API-fetched genre appendedeto it
+    │       ├── analysis/                         # statistical analyses between weather features and song genres
+    |       └── cleaning/                         # data cleaning    
+    ├── song-features/
+    │       ├── analysis/                         # analyzes relationships between song features and weather to pick best 3 (unused -- did not improve accuracy)
+    │       ├── data/                             # Output of data cleaning
+    │       │      ├── song/
+    │       │      └── weather/
+    │       ├── data cleaning/                    # source for data cleaning files
+    │       └── model/
+>>>>>>> cd14bd7 (updated README)
     └── README.md                   
 
 ## Requirements
