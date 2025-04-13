@@ -9,9 +9,10 @@ This project analyzes and clusters songs based on audio and genre features, then
     ├── song-features/             
     │   ├── data/                             # Output of data cleaning
     │   │   ├── song/
-    │   │   └── weather
+    │   │   └── weather/
     │   ├── data cleaning/                    # source for data cleaning files
-    │   └── model/                 
+    │   └── model/
+    |	|__ analysis/                         # analyzes relationships between song features and weather to pick best 3 (unused -- did not improve accuracy)
     └── README.md                   
 
 ## Requirements
