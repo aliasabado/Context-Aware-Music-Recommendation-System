@@ -5,7 +5,8 @@ This project analyzes and clusters songs based on audio and genre features, then
     .
     ├── initial-genre-only/                   # our original gathering and analysis where we weren't using song features other than genre
     │   ├── data/                             # song and weather data, original and with API-fetched genre appendedeto it
-    │   └── analysis                          # statistical analyses between weather features and song genres
+    │   └── analysis/                         # statistical analyses between weather features and song genres
+    |   |__ cleaning/                         # data cleaning    
     ├── song-features/             
     │   ├── data/                             # Output of data cleaning
     │   │   ├── song/
