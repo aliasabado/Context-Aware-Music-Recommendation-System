@@ -14,6 +14,8 @@ This project analyzes and clusters songs based on audio and genre features, then
     │       │      └── weather/
     │       ├── data cleaning/                    # source for data cleaning files
     │       └── model/
+    ├── Document/
+    │       └── CMPT-353- report.pdf
     └── README.md                   
 
 ## Requirements
