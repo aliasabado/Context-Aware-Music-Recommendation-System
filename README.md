@@ -3,9 +3,9 @@ This project analyzes and clusters songs based on audio and genre features, then
 
 ## Directories
     .
-    ├── data/
-    │   ├── Alia_IconAndGenre.ipynb           # Input dataset with song and weather features for Alia
-    │   └── Puja_IconAndGenre.ipynb           # Input dataset with song and weather features for Puja
+    ├── initial-genre-only/                   # our original gathering and analysis where we weren't using song features other than genre
+    │   ├── data/                             # song and weather data, original and with API-fetched genre appendedeto it
+    │   └── analysis                          # statistical analyses between weather features and song genres
     ├── song-features/             
     │   ├── data/                             # Output of data cleaning
     │   │   ├── song/
