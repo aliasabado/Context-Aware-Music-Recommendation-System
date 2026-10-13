@@ -1,4 +1,4 @@
-# 2025Spring-CMPT353-Weather-Aware Song Clustering & Classification
+# Context-Aware Music Recommendation System
 This project analyzes and clusters songs based on audio and genre features, then uses weather and song metadata to train a model that can classify new songs or predict song clusters in different weather contexts.
 
 ## Directories
@@ -57,3 +57,4 @@ Step-By-Step Guide:
 In the root directory run:
     <pre>jupyter-notebook</pre>
     
+**Note:** This repository was migrated from my university's GitHub Enterprise account to my personal GitHub account.
